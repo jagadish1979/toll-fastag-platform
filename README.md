@@ -30,9 +30,18 @@ ________________________________________________________________________________
 🏗️ <b>II. Architecture and System Overview</b>
 ________________________________________________________________________________________________________________________
 🔹 High-Level Architecture <br/>
-Event-driven microservices architecture<br/>
-Communication via Apache Kafka<br/>
-Deployed on Kubernetes</br>
+<table>
+  <tr>
+    <td>Event-driven microservices architecture</td>
+  </tr>
+  <tr>
+    <td>Communication via Apache Kafka</td>
+  </tr>
+    <tr>
+    <td>Deployed on Kubernetes</td>
+  </tr>
+</table>
+<br/>
 
 🔹 Component View (Microservices)
 <table>
