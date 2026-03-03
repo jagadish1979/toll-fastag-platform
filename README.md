@@ -1,9 +1,8 @@
 # toll-fastag-platform
 <b>Toll Fastag Microservices Platform</b>
-________________________________________________________________________________________________________________________________________________________________
-
+<hr />
 📘 <b>I. Introduction</b>
-________________________________________________________________________________________________________________________________________________________________
+<hr />
 🔹 Purpose<br/>
 The purpose of this System Design Document (SDD) is to define the architecture, components, and implementation approach for a scalable, event-driven Toll FastTag microservices platform built using Spring Boot. It serves as a blueprint for development, deployment, and maintenance. </br>
 🔹 Audience<br/>
@@ -25,10 +24,9 @@ Budget constraints on infrastructure
 Integration with external bank/payment systems
 Network reliability issues at toll plazas
 Compliance with financial transaction regulations
-________________________________________________________________________________________________________________________
-
+<hr />
 🏗️ <b>II. Architecture and System Overview</b>
-________________________________________________________________________________________________________________________
+<hr />
 🔹 High-Level Architecture <br/>
 <table>
   <tr>
@@ -108,15 +106,42 @@ ________________________________________________________________________________
 <table>
  <tr>
   <td>Application Framework</td>
-  <td>Spring Boot, Spring Cloud (Feign, Gateway)</td>
+  <td>
+    <table>
+      <tr>
+        <td>Spring Boot</td>
+      </tr>
+      <tr>
+        <td>Spring Cloud (Feign, Gateway)</td>
+      </tr>      
+    </table>
+     </td>
   </tr>
   <tr>
   <td>Containerization</td>
-  <td>Docker, Docker Compose (local setup)</td>
+  <td>
+    <table>
+      <tr>
+        <td>Docker</td>
+      </tr>
+      <tr>
+        <td>Docker Compose (local setup)</td>
+      </tr>      
+    </table>
+    </td>
   </tr>
   <tr>
     <td>Service Communication</td>
-    <td>REST APIs (Spring Web), Async messaging via Apache Kafka</td>
+    <td>
+       <table>
+      <tr>
+        <td>REST APIs (Spring Web)</td>
+      </tr>
+      <tr>
+        <td>Async messaging via Apache Kafka</td>
+      </tr>      
+    </table>
+      </td>
   </tr>
   <tr>
     <td>Service Discovery</td>
@@ -147,13 +172,24 @@ ________________________________________________________________________________
   </tr>
   <tr>
     <td>Data Storage</td>
-    <td>PostgreSQL (primary DB),Redis (caching layer), Spring Data JPA </td>
+    <td>
+      <table>
+         <tr>
+           <td>PostgreSQL (primary DB)</td>
+         </tr>
+          <tr>
+           <td>Redis (caching layer)</td>
+         </tr>
+         <tr>
+           <td>Spring Data JPA</td>
+         </tr>
+      </table>
+      </td>
   </tr>
-</table>>br/>
-________________________________________________________________________________________________________________________
-
+</table><br/>
+<hr />
 ⚙️ <b>III. System Design Details</b>
-________________________________________________________________________________________________________________________
+<hr />
 🔹 Service-Specific Design
 
 1. Ingestion Service
@@ -211,10 +247,9 @@ OAuth2 / JWT-based authentication
 Identity provider: Keycloak
 API Gateway handles auth validation
 Role-based access control (RBAC)
-________________________________________________________________________________________________________________________
-
+<hr />
 🚀 <b>IV. Development and Operations</b>
-________________________________________________________________________________________________________________________
+<hr />
 🔹 Development Environment</br>
 Prerequisites </br>
 <ol>
@@ -260,10 +295,9 @@ Build Command
   <li>Dashboards → Grafana</li>
   <li>Distributed tracing → OpenTelemetry</li>
 </ol>
-________________________________________________________________________________________________________________________________________________________________
-
+<hr />
 📌 <b>V. Conclusion</b>
-________________________________________________________________________________________________________________________________________________________________
+<hr />
 🔹 Key Milestones & Deliverables</br>
 <table>
   <tr>
