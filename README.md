@@ -1,9 +1,9 @@
 # toll-fastag-platform
-Toll Fastag Microservices Platform
+<b>Toll Fastag Microservices Platform</b>
 ________________________________________________________________________________________________________________________________________________________________
 
 📘 <b>I. Introduction</b>
-________________________________________
+________________________________________________________________________________________________________________________________________________________________
 🔹 Purpose
 The purpose of this System Design Document (SDD) is to define the architecture, components, and implementation approach for a scalable, event-driven Toll FastTag microservices platform built using Spring Boot. It serves as a blueprint for development, deployment, and maintenance. </br>
 🔹 Audience
@@ -28,7 +28,7 @@ Compliance with financial transaction regulations
 ________________________________________________________________________________________________________________________
 
 🏗️ <b>II. Architecture and System Overview</b>
-________________________________________
+________________________________________________________________________________________________________________________
 🔹 High-Level Architecture
 Event-driven microservices architecture
 Communication via Apache Kafka
@@ -94,7 +94,7 @@ Spring Data JPA
 ________________________________________________________________________________________________________________________
 
 ⚙️ <b>III. System Design Details</b>
-________________________________________
+________________________________________________________________________________________________________________________
 🔹 Service-Specific Design
 
 1. Ingestion Service
@@ -155,7 +155,7 @@ Role-based access control (RBAC)
 ________________________________________________________________________________________________________________________
 
 🚀 <b>IV. Development and Operations</b>
-________________________________________
+________________________________________________________________________________________________________________________
 🔹 Development Environment</br>
 Prerequisites </br>
 <ol>
@@ -165,8 +165,6 @@ Prerequisites </br>
   <li>Postgresql/mysql</li>
   <li>Redis</li>
   <li>Kafka</li>
-  <li></li>
-
 </ol><br/>
 
 Build Command
@@ -206,7 +204,7 @@ Build Command
 ________________________________________________________________________________________________________________________
 
 📌 <b>V. Conclusion</b>
-________________________________________
+________________________________________________________________________________________________________________________
 🔹 Key Milestones & Deliverables</br>
 <table>
   <tr>
