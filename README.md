@@ -35,18 +35,32 @@ Communication via Apache Kafka
 Deployed on Kubernetes</br>
 
 🔹 Component View (Microservices)
-Service
-Responsibility
-Ingestion Service
-Receives RFID scan events
-Processing Service
-Validates tag & calculates toll
-Payment Service
-Amount deduction & transactions
-Notification Service
-SMS/Email/WhatsApp alerts
-Gate Service
-Opens/closes toll barrier</br>
+<table>
+  <tr>
+    <th>Service</th>
+    <th>Responsibility</th>
+  </tr>
+  <tr>
+    <td>Ingestion Service</td>
+    <td>Receives RFID scan events</td>
+  </tr>
+  <tr>
+    <td>Processing Service</td>
+    <td>Validates tag & calculates toll amount</td>
+  </tr>
+  <tr>
+    <td>Payment Service</td>
+    <td>Amount deduction & transactions</td>
+  </tr>
+  <tr>
+    <td>Notification Service</td>
+    <td>SMS/Email/WhatsApp alerts</td>
+  </tr>
+  <tr>
+    <td>Gate Service</td>
+    <td>Opens/closes toll barrier</td>
+  </tr>
+</table></br>
 
 🔹 Key Design Patterns
 API Gateway Pattern → centralized routing
