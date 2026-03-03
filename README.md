@@ -5,7 +5,7 @@ ________________________________________________________________________________
 📘 I. Introduction
 ________________________________________
 🔹 Purpose
-The purpose of this System Design Document (SDD) is to define the architecture, components, and implementation approach for a scalable, event-driven Toll FastTag microservices platform built using Spring Boot. It serves as a blueprint for development, deployment, and maintenance.
+The purpose of this System Design Document (SDD) is to define the architecture, components, and implementation approach for a scalable, event-driven Toll FastTag microservices platform built using Spring Boot. It serves as a blueprint for development, deployment, and maintenance. </br>
 🔹 Audience
 Development Team (Backend, DevOps)
 Architects (Solution / Technical)
