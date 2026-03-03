@@ -4,22 +4,22 @@ ________________________________________________________________________________
 
 📘 <b>I. Introduction</b>
 ________________________________________________________________________________________________________________________________________________________________
-🔹 Purpose
+🔹 Purpose<br/>
 The purpose of this System Design Document (SDD) is to define the architecture, components, and implementation approach for a scalable, event-driven Toll FastTag microservices platform built using Spring Boot. It serves as a blueprint for development, deployment, and maintenance. </br>
-🔹 Audience
+🔹 Audience<br/>
 Development Team (Backend, DevOps)
 Architects (Solution / Technical)
 Project Managers
 Business Stakeholders </br>
 🔹 Problem Statement
 The system aims to automate toll collection using RFID (FASTag), eliminating manual payment delays, reducing congestion, and ensuring seamless vehicle movement across toll plazas. </br>
-🔹 Strategic Objectives
+🔹 Strategic Objectives<br/>
 High scalability (handle peak traffic loads)
 Low latency (real-time toll processing)
 High availability (24/7 system uptime)
 Fault tolerance (resilient microservices)
 Extensibility (support future channels like WhatsApp notifications </br>
-🔹 Design Constraints
+🔹 Design Constraints<br/>
 Must support real-time processing (< 200ms response)
 Budget constraints on infrastructure
 Integration with external bank/payment systems
@@ -29,9 +29,9 @@ ________________________________________________________________________________
 
 🏗️ <b>II. Architecture and System Overview</b>
 ________________________________________________________________________________________________________________________
-🔹 High-Level Architecture
-Event-driven microservices architecture
-Communication via Apache Kafka
+🔹 High-Level Architecture <br/>
+Event-driven microservices architecture<br/>
+Communication via Apache Kafka<br/>
 Deployed on Kubernetes</br>
 
 🔹 Component View (Microservices)
@@ -201,10 +201,10 @@ Build Command
   <li>Dashboards → Grafana</li>
   <li>Distributed tracing → OpenTelemetry</li>
 </ol>
-________________________________________________________________________________________________________________________
+________________________________________________________________________________________________________________________________________________________________
 
 📌 <b>V. Conclusion</b>
-________________________________________________________________________________________________________________________
+________________________________________________________________________________________________________________________________________________________________
 🔹 Key Milestones & Deliverables</br>
 <table>
   <tr>
