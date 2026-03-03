@@ -178,14 +178,32 @@ ________________________________________________________________________________
 📌 V. Conclusion
 ________________________________________
 🔹 Key Milestones & Deliverables</br>
-______________________________________
-| Phase    | Deliverable             |
-| Phase 1  | Core microservices setup|
-| Phase 2  | Kafka integration       |
-| Phase 3  | Payment & notification  |
-| Phase 4  | Kubernetes deployment   |
-| Phase 5  | Observability setup     |
-______________________________________
+<table>
+  <tr>
+    <th>Phase</th>
+    <th>Deliverable</th>
+  </tr>
+  <tr>
+    <td>Phase 1</td>
+    <td>Core microservices setup</td>
+  </tr>
+  <tr>
+    <td>Phase 1</td>
+    <td>Kafka integration</td>
+  </tr>
+  <tr>
+    <td>Phase 3</td>
+    <td>Payment & notification</td>
+  </tr>
+  <tr>
+    <td>Phase 4</td>
+    <td>Kubernetes deployment</td>
+  </tr>
+  <tr>
+    <td>Phase 5</td>
+    <td>Observability setup</td>
+  </tr>
+</table>
 </br>
 
 🔹 Future Work / Enhancements</br>
