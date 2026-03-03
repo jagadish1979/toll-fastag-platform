@@ -102,7 +102,7 @@ Calculate toll amount based on vehicle type
 Trigger Payment</br>
 
 4. Payment Service
-Database Schema - Toll
+Database Schema - Toll</br>
 Table 1 - Tags
 Table 2 - Transaction
 Table 3 - Idempotency</br>
@@ -178,18 +178,15 @@ ________________________________________________________________________________
 📌 V. Conclusion
 ________________________________________
 🔹 Key Milestones & Deliverables</br>
-Phase
-Deliverable
-Phase 1
-Core microservices setup
-Phase 2
-Kafka integration
-Phase 3
-Payment & notification
-Phase 4
-Kubernetes deployment
-Phase 5
-Observability setup</br>
+______________________________________
+| Phase    | Deliverable             |
+| Phase 1  | Core microservices setup|
+| Phase 2  | Kafka integration       |
+| Phase 3  | Payment & notification  |
+| Phase 4  | Kubernetes deployment   |
+| Phase 5  | Observability setup     |
+______________________________________
+</br>
 
 🔹 Future Work / Enhancements</br>
 AI-based traffic prediction
