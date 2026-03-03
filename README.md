@@ -10,15 +10,15 @@ The purpose of this System Design Document (SDD) is to define the architecture, 
 Development Team (Backend, DevOps)
 Architects (Solution / Technical)
 Project Managers
-Business Stakeholders
+Business Stakeholders </br>
 🔹 Problem Statement
-The system aims to automate toll collection using RFID (FASTag), eliminating manual payment delays, reducing congestion, and ensuring seamless vehicle movement across toll plazas.
+The system aims to automate toll collection using RFID (FASTag), eliminating manual payment delays, reducing congestion, and ensuring seamless vehicle movement across toll plazas. </br>
 🔹 Strategic Objectives
 High scalability (handle peak traffic loads)
 Low latency (real-time toll processing)
 High availability (24/7 system uptime)
 Fault tolerance (resilient microservices)
-Extensibility (support future channels like WhatsApp notifications
+Extensibility (support future channels like WhatsApp notifications </br>
 🔹 Design Constraints
 Must support real-time processing (< 200ms response)
 Budget constraints on infrastructure
@@ -32,7 +32,7 @@ ________________________________________
 🔹 High-Level Architecture
 Event-driven microservices architecture
 Communication via Apache Kafka
-Deployed on Kubernetes
+Deployed on Kubernetes</br>
 
 🔹 Component View (Microservices)
 Service
@@ -46,7 +46,7 @@ Amount deduction & transactions
 Notification Service
 SMS/Email/WhatsApp alerts
 Gate Service
-Opens/closes toll barrier
+Opens/closes toll barrier</br>
 
 🔹 Key Design Patterns
 API Gateway Pattern → centralized routing
@@ -54,7 +54,7 @@ Database per Service → loose coupling
 Circuit Breaker (Resilience4j) → fault tolerance
 Saga Pattern → distributed transaction handling
 Proxy Pattern → notification channel abstraction
-Event-Driven Architecture → async processing
+Event-Driven Architecture → async processing</br>
 
 🔹 Technology Stack
 Application Framework
@@ -90,7 +90,7 @@ Database
 Minimal (event-driven, no heavy storage)
 Business Logic
 Validate request
-Publish event to Kafka topic: tag-scan-topic
+Publish event to Kafka topic: tag-scan-topic</br>
 
 2. Processing Service
 Database Schema - Toll
@@ -99,19 +99,19 @@ Business Logic
 Validate tag
 Fetch vehicle tag details (Redis + DB)
 Calculate toll amount based on vehicle type
-Trigger Payment
-3. Payment Service
+Trigger Payment</br>
+
+4. Payment Service
 Database Schema - Toll
 Table 1 - Tags
 Table 2 - Transaction
-Table 3 - Idempotency
-
+Table 3 - Idempotency</br>
 
 Business Logic
 Handle insufficient balance
 Deduct balance
 Handle Idempotency
-Maintain transaction history
+Maintain transaction history</br>
 
 4. Notification Service
 Business Logic
@@ -119,19 +119,19 @@ Uses Proxy Pattern
 Routes notifications to:
 SMS
 Email
-WhatsApp (future)
+WhatsApp (future)</br>
 
 5. Gate Service
 Business Logic
 Integrates with toll hardware
-Opens/closes barrier based on payment status
+Opens/closes barrier based on payment status</br>
 
 🔹 Deployment Strategy
 Containerized using Docker
 Orchestrated via Kubernetes
 Hosted on AWS EKS (or similar)
 Horizontal Pod Autoscaling (HPA)
-Rolling updates for zero downtime
+Rolling updates for zero downtime</br>
 
 🔹 Security
 OAuth2 / JWT-based authentication
@@ -151,13 +151,13 @@ Postgresql/mysql
 Redis
 Kafka
 Build Command
-mvn clean install 
+mvn clean install </br>
 
 🔹 Testing Strategy
 Unit Testing → JUnit 5
 Integration Testing → Spring Boot Test
 Contract Testing → WireMock
-Load Testing → JMeter
+Load Testing → JMeter</br>
 
 🔹 CI/CD Pipeline
 Using Jenkins
@@ -166,7 +166,7 @@ Build → Maven
 Test → Automated tests
 Docker image build
 Push to registry
-Deploy to Kubernetes
+Deploy to Kubernetes</br>
 
 🔹 Monitoring and Logging
 Logs → ELK Stack
@@ -189,7 +189,7 @@ Payment & notification
 Phase 4
 Kubernetes deployment
 Phase 5
-Observability setup
+Observability setup</br>
 
 🔹 Future Work / Enhancements
 AI-based traffic prediction
