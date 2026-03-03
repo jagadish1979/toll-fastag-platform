@@ -126,14 +126,14 @@ Business Logic
 Integrates with toll hardware
 Opens/closes barrier based on payment status</br>
 
-🔹 Deployment Strategy
+🔹 Deployment Strategy</br>
 Containerized using Docker
 Orchestrated via Kubernetes
 Hosted on AWS EKS (or similar)
 Horizontal Pod Autoscaling (HPA)
 Rolling updates for zero downtime</br>
 
-🔹 Security
+🔹 Security</br>
 OAuth2 / JWT-based authentication
 Identity provider: Keycloak
 API Gateway handles auth validation
@@ -142,7 +142,7 @@ ________________________________________________________________________________
 
 🚀 IV. Development and Operations
 ________________________________________
-🔹 Development Environment
+🔹 Development Environment</br>
 Prerequisites
 Java 17+
 Maven / Gradle
@@ -153,13 +153,13 @@ Kafka
 Build Command
 mvn clean install </br>
 
-🔹 Testing Strategy
+🔹 Testing Strategy</br>
 Unit Testing → JUnit 5
 Integration Testing → Spring Boot Test
 Contract Testing → WireMock
 Load Testing → JMeter</br>
 
-🔹 CI/CD Pipeline
+🔹 CI/CD Pipeline</br>
 Using Jenkins
 Code commit → GitHub
 Build → Maven
@@ -168,7 +168,7 @@ Docker image build
 Push to registry
 Deploy to Kubernetes</br>
 
-🔹 Monitoring and Logging
+🔹 Monitoring and Logging</br>
 Logs → ELK Stack
 Metrics → Prometheus
 Dashboards → Grafana
@@ -177,7 +177,7 @@ ________________________________________________________________________________
 
 📌 V. Conclusion
 ________________________________________
-🔹 Key Milestones & Deliverables
+🔹 Key Milestones & Deliverables</br>
 Phase
 Deliverable
 Phase 1
@@ -191,7 +191,7 @@ Kubernetes deployment
 Phase 5
 Observability setup</br>
 
-🔹 Future Work / Enhancements
+🔹 Future Work / Enhancements</br>
 AI-based traffic prediction
 Dynamic toll pricing
 Multi-country currency support
