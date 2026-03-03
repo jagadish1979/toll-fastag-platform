@@ -157,36 +157,52 @@ ________________________________________________________________________________
 🚀 IV. Development and Operations
 ________________________________________
 🔹 Development Environment</br>
-Prerequisites
-Java 17+
-Maven / Gradle
-Docker
-Postgresql/mysql
-Redis
-Kafka
+Prerequisites </br>
+<ol>
+  <li>Java 17+</li>
+  <li>Maven / Gradle</li>
+  <li>Docker</li>
+  <li>Postgresql/mysql</li>
+  <li>Redis</li>
+  <li>Kafka</li>
+  <li></li>
+
+</ol><br/>
+
 Build Command
-mvn clean install </br>
+<ol>
+  <li>mvn clean install</li>
+</ol>
+ </br>
 
 🔹 Testing Strategy</br>
-Unit Testing → JUnit 5
-Integration Testing → Spring Boot Test
-Contract Testing → WireMock
-Load Testing → JMeter</br>
+<ol>
+  <li>Unit Testing → JUnit 5</li>
+  <li>Integration Testing → Spring Boot Test</li>
+  <li>Contract Testing → WireMock</li>
+  <li>Load Testing → JMeter or Loadrunner </li>
+</ol>
+</br>
 
 🔹 CI/CD Pipeline</br>
-Using Jenkins
-Code commit → GitHub
-Build → Maven
-Test → Automated tests
-Docker image build
-Push to registry
-Deploy to Kubernetes</br>
+<ol>
+  <li>Using Jenkins</li>
+  <li>Code commit → GitHub</li>
+  <li>Build → Maven</li>
+  <li>Test → Automated tests</li>
+  <li>Docker image build</li>
+  <li>Push to registry</li>
+  <li>Deploy to Kubernetes</li>
+</ol>
+</br>
 
 🔹 Monitoring and Logging</br>
-Logs → ELK Stack
-Metrics → Prometheus
-Dashboards → Grafana
-Distributed tracing → OpenTelemetry
+<ol>
+  <li>Logs → ELK Stack</li>
+  <li>Metrics → Prometheus</li>
+  <li>Dashboards → Grafana</li>
+  <li>Distributed tracing → OpenTelemetry</li>
+</ol>
 ________________________________________________________________________________________________________________________
 
 📌 V. Conclusion
