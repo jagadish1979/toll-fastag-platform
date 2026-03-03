@@ -2,7 +2,7 @@
 Toll Fastag Microservices Platform
 ________________________________________________________________________________________________________________________________________________________________
 
-📘 I. Introduction
+📘 <b>I. Introduction</b>
 ________________________________________
 🔹 Purpose
 The purpose of this System Design Document (SDD) is to define the architecture, components, and implementation approach for a scalable, event-driven Toll FastTag microservices platform built using Spring Boot. It serves as a blueprint for development, deployment, and maintenance. </br>
@@ -27,7 +27,7 @@ Network reliability issues at toll plazas
 Compliance with financial transaction regulations
 ________________________________________________________________________________________________________________________
 
-🏗️ II. Architecture and System Overview
+🏗️ <b>II. Architecture and System Overview</b>
 ________________________________________
 🔹 High-Level Architecture
 Event-driven microservices architecture
@@ -93,7 +93,7 @@ Redis (caching layer)
 Spring Data JPA
 ________________________________________________________________________________________________________________________
 
-⚙️ III. System Design Details
+⚙️ <b>III. System Design Details</b>
 ________________________________________
 🔹 Service-Specific Design
 
@@ -154,7 +154,7 @@ API Gateway handles auth validation
 Role-based access control (RBAC)
 ________________________________________________________________________________________________________________________
 
-🚀 IV. Development and Operations
+🚀 <b>IV. Development and Operations</b>
 ________________________________________
 🔹 Development Environment</br>
 Prerequisites </br>
@@ -205,7 +205,7 @@ Build Command
 </ol>
 ________________________________________________________________________________________________________________________
 
-📌 V. Conclusion
+📌 <b>V. Conclusion</b>
 ________________________________________
 🔹 Key Milestones & Deliverables</br>
 <table>
