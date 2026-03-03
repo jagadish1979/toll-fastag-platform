@@ -221,11 +221,18 @@ ________________________________________
 </br>
 
 🔹 Future Work / Enhancements</br>
-AI-based traffic prediction
-Dynamic toll pricing
-Multi-country currency support
-Advanced fraud detection
-Mobile app integration
+<ol>
+  <li>AI-based traffic prediction</li>
+  <li>Dynamic toll pricing</li>
+  <li>Multi-country currency support</li>
+  <li>Advanced fraud detection</li>
+  <li>Mobile app integration</li>
+</ol>
+
+
+
+
+
 
 
 
