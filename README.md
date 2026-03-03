@@ -11,7 +11,7 @@ Development Team (Backend, DevOps)
 Architects (Solution / Technical)
 Project Managers
 Business Stakeholders </br>
-🔹 Problem Statement
+🔹 Problem Statement</br>
 The system aims to automate toll collection using RFID (FASTag), eliminating manual payment delays, reducing congestion, and ensuring seamless vehicle movement across toll plazas. </br>
 🔹 Strategic Objectives<br/>
 High scalability (handle peak traffic loads)
@@ -71,35 +71,85 @@ ________________________________________________________________________________
   </tr>
 </table></br>
 
-🔹 Key Design Patterns
-API Gateway Pattern → centralized routing
-Database per Service → loose coupling
-Circuit Breaker (Resilience4j) → fault tolerance
-Saga Pattern → distributed transaction handling
-Proxy Pattern → notification channel abstraction
-Event-Driven Architecture → async processing</br>
+🔹 Key Design Patterns<br/>
+<table>
+  <tr>
+  <th>Design Pattern</th>
+  <th>Purpose</th>
+  </tr>
+  <tr>
+  <td>API Gateway Pattern</td>
+  <td>centralized routing</td>
+  </tr>
+  <tr>
+  <td>Database per Service</td>
+  <td>loose coupling</td>
+  </tr>
+  <tr>
+  <td>Circuit Breaker (Resilience4j)</td>
+  <td>fault tolerance</td>
+  </tr>
+  <tr>
+  <td>Saga Pattern</td>
+  <td>distributed transaction handling</td>
+  </tr>
+  <tr>
+  <td>Proxy Pattern</td>
+  <td>Notification channel abstraction</td>
+  </tr>
+  <tr>
+  <td>Event-Driven Architecture</td>
+  <td>Async processing</td>
+  </tr>
+</table>
+</br>
 
-🔹 Technology Stack
-Application Framework
-Spring Boot
-Spring Cloud (Feign, Gateway)
-Containerization
-Docker
-Docker Compose (local setup)
-Service Communication
-REST APIs (Spring Web)
-Async messaging via Apache Kafka
-Service Discovery
-Eureka / Consul
-Observability
-Metrics: Prometheus
-Visualization: Grafana
-Logging: ELK Stack
-Tracing: OpenTelemetry
-Data Storage
-PostgreSQL (primary DB)
-Redis (caching layer)
-Spring Data JPA
+🔹 Technology Stack <br/>
+<table>
+ <tr>
+  <td>Application Framework</td>
+  <td>Spring Boot, Spring Cloud (Feign, Gateway)</td>
+  </tr>
+  <tr>
+  <td>Containerization</td>
+  <td>Docker, Docker Compose (local setup)</td>
+  </tr>
+  <tr>
+    <td>Service Communication</td>
+    <td>REST APIs (Spring Web), Async messaging via Apache Kafka</td>
+  </tr>
+  <tr>
+    <td>Service Discovery</td>
+    <td>Eureka / Consul</td>
+  </tr>
+  <tr>
+    <td>Observability</td>
+    <td>
+       <table>
+         <tr>
+           <td>Metrics</td>
+           <td>Prometheus</td>
+         </tr>
+         <tr>
+           <td>Visualization</td>
+           <td>Grafana</td>
+         </tr>
+         <tr>
+           <td>Logging</td>
+           <td>ELK Stack</td>
+         </tr>
+         <tr>
+           <td>Tracing</td>
+           <td>OpenTelemetry</td>
+         </tr>         
+       </table>
+    </td>
+  </tr>
+  <tr>
+    <td>Data Storage</td>
+    <td>PostgreSQL (primary DB),Redis (caching layer), Spring Data JPA </td>
+  </tr>
+</table>>br/>
 ________________________________________________________________________________________________________________________
 
 ⚙️ <b>III. System Design Details</b>
