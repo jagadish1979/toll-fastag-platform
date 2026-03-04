@@ -1,0 +1,95 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<!-- 🔹 Project Info -->
+	<groupId>com.fastag</groupId>
+	<artifactId>toll-fastag-platform</artifactId>
+	<version>1.0</version>
+	<packaging>pom</packaging>
+
+	<name>toll-fastag-platform</name>
+	<description>Toll Fastag Microservices Platform</description>
+
+	<!-- Inherit Spring Boot -->
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>3.3.1</version>
+		<relativePath /> <!-- lookup parent from repository -->
+	</parent>
+
+	<!-- Modules -->
+	<modules>
+		<module>common-lib</module>
+		<module>common-service</module>
+		<module>tag-ingestion-service</module>
+		<module>processing-service</module>
+		<module>payment-service</module>
+		<module>notification-service</module>
+		<module>gate-service</module>
+		<module>hardware-service</module>
+	</modules>
+
+	<!-- Properties -->
+	<properties>
+		<java.version>17</java.version>
+		<spring.boot.version>3.3.2</spring.boot.version>
+		<spring.cloud.version>2023.0.3</spring.cloud.version>
+	</properties>
+
+	<!-- Dependency Management (Centralized Versions) -->
+	<dependencyManagement>
+		<dependencies>
+
+			<!-- Spring Boot BOM -->
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-dependencies</artifactId>
+				<version>${spring.boot.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+
+			<!-- Spring Cloud BOM -->
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-dependencies</artifactId>
+				<version>${spring.cloud.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+
+		</dependencies>
+	</dependencyManagement>
+
+	<!-- Common Plugins -->
+	<build>
+		<pluginManagement>
+			<plugins>
+
+				<!-- Compiler Plugin -->
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<version>3.11.0</version>
+					<configuration>
+						<source>${java.version}</source>
+						<target>${java.version}</target>
+					</configuration>
+				</plugin>
+
+				<!-- Spring Boot Plugin -->
+				<plugin>
+					<groupId>org.springframework.boot</groupId>
+					<artifactId>spring-boot-maven-plugin</artifactId>
+				</plugin>
+
+			</plugins>
+
+		</pluginManagement>
+	</build>
+
+</project>
