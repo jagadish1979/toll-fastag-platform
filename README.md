@@ -212,8 +212,8 @@ Trigger Payment</br>
 
 4. Payment Service
 Database Schema - Toll</br>
-Table 1 - Tags
-Table 2 - Transaction
+Table 1 - Tags</br>
+Table 2 - Transaction</br>
 Table 3 - Idempotency</br>
 
 Business Logic
